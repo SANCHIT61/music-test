@@ -15,6 +15,9 @@ function playMusic() {
 
     (function play() {
         i+=1;
+        if (i >= length) {
+            return ;
+        }
 
         let sourceUrl = musicArray[i].getAttribute('src');
         if (sourceUrl) {
